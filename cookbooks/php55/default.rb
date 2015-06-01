@@ -7,4 +7,3 @@ package "php55" do
   action :install
   options "--enablerepo=remi --enablerepo=remi-php55"
 end
-

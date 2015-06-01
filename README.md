@@ -30,7 +30,7 @@ $ bundle install
 ### itamae
 
 ```
-$ bundle exec itamae --host 192.168.56.101 --user root recipe.rb
+$ bundle exec itamae --host 192.168.56.101 --user root --node-json=node.json bootstrap.rb
 ```
 
 ね、簡単でしょう？
@@ -39,7 +39,7 @@ $ bundle exec itamae --host 192.168.56.101 --user root recipe.rb
 (デバッグ用) オプションたくさんバージョン+dry-runで環境を汚さない仕様
 
 ```
-$ itamae ssh --host 192.168.56.101 --user root --dry-run --port 22 -l debug --color recipe.rb
+$ itamae ssh --host 192.168.56.101 --user root --dry-run --port 22 -l debug --node-json=node.json bootstrap.rb
 ```
 
 ### serverspec
@@ -73,3 +73,4 @@ $ bundle exec rake
 
 [itamae-kitchen/itamae wiki](https://github.com/itamae-kitchen/itamae/wiki)
 
+[クックパッドのサーバープロビジョニング事情](http://techlife.cookpad.com/entry/2015/05/12/080000)
