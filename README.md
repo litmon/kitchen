@@ -30,7 +30,7 @@ $ bundle install
 ### itamae
 
 ```
-$ bundle exec itamae ssh --host 192.168.56.101 --user root --node-json=node.json bootstrap.rb
+$ bundle exec itamae ssh --host 192.168.56.101 --user root recipe.rb
 ```
 
 ね、簡単でしょう？
@@ -39,7 +39,7 @@ $ bundle exec itamae ssh --host 192.168.56.101 --user root --node-json=node.json
 (デバッグ用) オプションたくさんバージョン+dry-runで環境を汚さない仕様
 
 ```
-$ itamae ssh --host 192.168.56.101 --user root --dry-run --port 22 -l debug --node-json=node.json bootstrap.rb
+$ bundle exec itamae ssh --host 192.168.56.101 --user root --dry-run --port 22 -l debug recipe.rb
 ```
 
 ### serverspec
