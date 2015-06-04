@@ -2,7 +2,7 @@ package "epel-release"
 
 execute "Add repository remi to rpm" do
   command "rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm"
-  not_if "rpm -q remi-release-7.0-1.el7.remi.noarch"
+  not_if "rpm -q remi-release"
 end
 
 package "nginx"
