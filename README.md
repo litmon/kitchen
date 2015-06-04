@@ -30,7 +30,7 @@ $ bundle install
 ### itamae
 
 ```
-$ bundle exec itamae --host 192.168.56.101 --user root --node-json=node.json bootstrap.rb
+$ bundle exec itamae ssh --host 192.168.56.101 --user root --node-json=node.json bootstrap.rb
 ```
 
 ね、簡単でしょう？
