@@ -9,6 +9,7 @@ itamaeを使ってnginxとPHPをインストールしてみます。
 * ruby 2.1.1
 * itamae 1.2.19
 * serverspec 2.17.0
+* CentOS 7
 
 ## 要件
 
